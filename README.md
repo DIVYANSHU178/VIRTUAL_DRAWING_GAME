@@ -1,38 +1,53 @@
-# Virtual Drawing App
-& "C:\VS CODE\VIRTUAL DRAWING\.venv\Scripts\python.exe" "C:\VS CODE\VIRTUAL DRAWING\virtual_drawing.py"
-This Python project is an interactive drawing application that uses your webcam to track your hand and allows you to draw on the screen with your index finger.
+# Virtual Gesture Drawing Canvas
 
-## Features
+> **Real-time computer vision drawing application using webcam hand tracking powered by Python, MediaPipe, and OpenCV.**
 
-- Real-time hand tracking using MediaPipe.
-- Drawing on the screen by moving your index finger.
-- Multiple color options.
-- A "Clear" button to erase the drawing.
-- Live webcam feed as the background.
-- Smooth and anti-aliased drawing strokes.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](https://opencv.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand_Landmarks-0078D4?style=flat-square&logo=google&logoColor=white)](https://developers.google.com/mediapipe)
 
-## Installation
+---
 
-1.  **Clone the repository or download the code.**
-2.  **Install the required libraries:**
+## 📌 Overview
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+An interactive, touchless computer vision application that turns the user's index finger into an on-screen digital pen using a standard webcam. Powered by **MediaPipe Hands** and **OpenCV**, the system tracks hand landmarks in real time and renders smooth, anti-aliased drawing strokes directly over the video feed.
 
-## How to Run
+---
 
-1.  **Run the application:**
+## ✨ Features
 
-    ```bash
-    python virtual_drawing.py
-    ```
+* **Touchless Air-Canvas:** Draw in 2D space by tracking the tip of the index finger.
+* **Interactive Toolbars:** Real-time on-screen UI buttons for color switching (Blue, Green, Red, Yellow, Magenta, Orange).
+* **Canvas Actions:** Hover-based action triggers to clear the canvas or export the generated artwork as `drawing.png`.
+* **Adaptive Stroke Smoothing:** Anti-aliased line rendering that minimizes jitter between captured frames.
 
-2.  **Use the application:**
+---
 
-    *   Your webcam will turn on.
-    *   Raise your hand in front of the camera.
-    *   Move your index finger to draw on the screen.
-    *   To change colors, hover your index finger over the color palette at the top of the screen. The available colors are Blue, Green, Red, Yellow, Magenta, and Orange.
-    *   To clear the screen, hover your index finger over the "CLEAR" button.
-    *   To save your drawing, hover your index finger over the "SAVE" button. The drawing will be saved as `drawing.png` in the same directory.
+## 🚀 Installation & Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/DIVYANSHU178/VIRTUAL_DRAWING_GAME.git
+   cd VIRTUAL_DRAWING_GAME
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application:**
+   ```bash
+   python virtual_drawing.py
+   ```
+
+4. **Controls:**
+   * Raise your hand in front of the camera.
+   * Move your index finger to sketch on screen.
+   * Hover over the top color palette to select ink colors.
+   * Hover over **CLEAR** to reset or **SAVE** to export your drawing.
+
+---
+
+## 📄 License
+This project is open-source and available under the MIT License.
